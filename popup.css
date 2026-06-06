@@ -1,0 +1,227 @@
+:root {
+  color-scheme: light dark;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: 340px;
+  background: Canvas;
+  color: CanvasText;
+}
+
+body {
+  padding: 12px;
+  font-size: 13px;
+}
+
+.shell {
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+}
+
+.hero,
+.panel {
+  border: 1px solid ButtonBorder;
+  border-radius: 6px;
+  background: Field;
+}
+
+.hero {
+  padding: 10px;
+  justify-self: start;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.brand {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.brand-mark {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+}
+
+.brand-mark img {
+  width: 18px;
+  height: 18px;
+}
+
+.tab-title {
+  border: 1px solid ButtonBorder;
+  border-bottom-color: transparent;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(to bottom, Canvas 0%, Field 78%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.38);
+}
+
+.hero.tab-title {
+  padding: 10px 12px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.panel {
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  margin-top: 0;
+}
+
+label {
+  display: grid;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+
+label span {
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  border: 1px solid ButtonBorder;
+  border-radius: 2px;
+  background: Field;
+  color: FieldText;
+  padding: 6px 8px;
+  font: inherit;
+  outline: none;
+}
+
+input:focus {
+  border-color: Highlight;
+  box-shadow: 0 0 0 1px Highlight;
+}
+
+input[readonly] {
+  background: Canvas;
+}
+
+.field-inline {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto;
+  gap: 6px;
+  align-items: center;
+}
+
+.hash-identicon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid ButtonBorder;
+  border-radius: 2px;
+  background: Canvas;
+}
+
+.icon-button {
+  border: 1px solid ButtonBorder;
+  border-radius: 2px;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background: ButtonFace;
+  color: ButtonText;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-button svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.icon-button:hover {
+  filter: brightness(0.97);
+}
+
+.icon-button:active {
+  filter: brightness(0.92);
+}
+
+.icon-button.is-matching-clipboard {
+  background: Highlight;
+  color: HighlightText;
+  border-color: Highlight;
+}
+
+.meta {
+  margin: 0;
+  color: GrayText;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.password-timeout {
+  margin-top: 6px;
+  width: 100%;
+  height: 2px;
+  background: color-mix(in srgb, CanvasText 16%, transparent);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.password-timeout-bar {
+  width: 0;
+  height: 100%;
+  background: Highlight;
+  transition: width 120ms linear;
+}
+
+.algo-toggle-button {
+  width: fit-content;
+  padding: 4px 12px;
+  border: 1px solid ButtonBorder;
+  border-radius: 4px;
+  background: ButtonFace;
+  color: ButtonText;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.algo-toggle-button:hover {
+  filter: brightness(0.97);
+}
+
+.algo-toggle-button:active {
+  filter: brightness(0.92);
+}
+
+.algo-toggle-button.is-active {
+  background: Highlight;
+  color: HighlightText;
+  border-color: Highlight;
+}
+
+@media (max-width: 380px) {
+  body {
+    padding: 10px;
+  }
+
+  .hero,
+  .panel {
+    border-radius: 4px;
+  }
+
+}

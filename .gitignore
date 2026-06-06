@@ -1,0 +1,19 @@
+# Build and release artifacts
+dist/
+*.zip
+
+# Go build outputs
+bin/
+*.exe
+*.test
+*.out
+
+# Editor and OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and local environment files
+*.log
+.env
+.env.*
