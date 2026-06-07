@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Hash Passwords",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Firefox extension inspired by Stanford PwdHash to generate passwords.",
   "permissions": [
     "tabs",
