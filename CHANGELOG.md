@@ -10,6 +10,15 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
 
 - No unreleased changes documented yet.
 
+## [0.1.2] - 2026-06-07
+
+- No visible changes or bugfixes.
+- Removed linter warning about innerHTML assignement.
+
+## [0.1.1] - 2026-06-07
+
+- Metadata updates only; no changes to the plugin.
+
 ## [0.1.0] - 2026-06-04
 
 ### Added
